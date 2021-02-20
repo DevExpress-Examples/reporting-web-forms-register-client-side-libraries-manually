@@ -1,0 +1,17 @@
+{
+  "name": "t115434",
+  "version": "16.2",
+  "description": "Manual Scripts Registration for DevExpress Web Report Designer",
+  "dependencies": {
+	"devextreme": "^16.2",
+    "jquery": "^2.2.3",
+	"jqueryui": "^1.11.4",
+    "globalize": "^1.1",
+	"knockout": "^3.3",
+	"ace-builds": "^1.1.9"
+    
+  },  
+  "authors": [
+    "DevExpress"
+  ]
+}
