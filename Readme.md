@@ -1,4 +1,7 @@
 # How to register third-party and DevExtreme client-side libraries manually for Web Reporting widgets 
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/340665015/)**
+<!-- run online end -->
 
 This example demonstrates how to include both the **Third\-Party** and **DevExtreme** libraries to an ASP.NET Web Forms web application **manually**. Our reporting web components require the following libraries:
 
