@@ -16,7 +16,7 @@ This example demonstrates how to include both **Third-Party** and **DevExtreme**
 - [dx.all.js](https://github.com/DevExpress/bower-devextreme/tree/master/js) (should include the **dx.common.css** stylesheet along with the theme stylesheet: **dx.light.css** or **dx.dark.css**)  
 
 
-To register these libraries on a web page manually, download them and put them into the Scripts folder. In this example, we used the [Bower][6] package manager for this purpose. Use the `bower install` command in the project folder to download client-side libraries before running the project.
+To register these libraries on a web page manually, download them and put them into the Scripts folder. In this example, we used the [Bower](https://bower.io/) package manager for this purpose. Use the `bower install` command in the project folder to download client-side libraries before running the project.
 
 Then, register an empty "resources" section in your `Web.config` file to disable automatic registration: 
 ```xml  
