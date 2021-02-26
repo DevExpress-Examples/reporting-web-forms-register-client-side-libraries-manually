@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DefaultWithBundles.aspx.cs" Inherits="T115434.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DefaultWithBundles.aspx.cs" Inherits="T115434.DefaultWithBundles" %>
 
 <%@ Register Assembly="DevExpress.XtraReports.v19.2.Web.WebForms, Version=19.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.XtraReports.Web" TagPrefix="dx" %>
@@ -17,11 +17,11 @@
     <form id="form1" runat="server">
         <div>
             <p>
-                <b>Important Note:</b> Right-click the <i>package.json</i> file in the Solution Explorer and click the "Restore Packages" command in order to restore the script files.
+                <b>Important Note:</b> Right-click the <i>package.json</i> file in the Solution Explorer and click the "Restore Packages" command in order to restore script files.
             </p>
 
             <p>
-                The <a href="https://www.nuget.org/packages/BuildBundlerMinifier/">BuildBundlerMinifier﻿</a> NuGet package is used to generate bundles. The bundles configuration is located in the <i>bundleconfig.json</i> file. Also the <i>libman.json</i> is used to move DevExtreme icons to css folder where the <i>devextreme.bundle.min.css</i> bundle is located.
+                The <a href="https://www.nuget.org/packages/BuildBundlerMinifier/">BuildBundlerMinifier﻿</a> NuGet package is used to generate bundles. The configuration of bundles is located in the <i>bundleconfig.json</i> file. Also, <i>libman.json</i> is used to move DevExtreme icons to the css folder where the <i>devextreme.bundle.min.css</i> bundle is located.
             </p>
             <dx:ASPxReportDesigner ID="ASPxReportDesigner1" runat="server">
             </dx:ASPxReportDesigner>

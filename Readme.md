@@ -1,6 +1,6 @@
 # How to register third-party and DevExtreme client-side libraries manually for Web Reporting widgets 
 
-This example demonstrates how to include both the **Third\-Party** and **DevExtreme** libraries to an ASP.NET Web Forms web application **manually**. Our reporting web components require the following libraries:
+This example demonstrates how to include both **Third-Party** and **DevExtreme** libraries in an ASP.NET Web Forms web application **manually**. Our reporting web components require the following libraries:
 
 **Third\-Party Libraries:**
 - [jQuery 1.11.3+](http://jquery.com/)
@@ -14,9 +14,9 @@ This example demonstrates how to include both the **Third\-Party** and **DevExtr
 - [dx.all.js](https://github.com/DevExpress/bower-devextreme/tree/master/js) (should include the **dx.common.css** stylesheet along with the theme stylesheet: **dx.light.css** or **dx.dark.css**)  
 
 
-To register these libraries on the web page you need to download and put them to your web application folder first. In this example we used the [npm](https://www.npmjs.com/) package manager for this purpose. Right-click the [package.json](./CS/T115434/package.json) file in the Solution Explorer and click the "Restore Packages" command in order to restore the script files. You can also use the `npm install` command in the project folder for restoring the packages.
+Download these libraries and put them into your web application folder. In this example, we used the [npm](https://www.npmjs.com/) package manager for this purpose. Right-click the `package.json` file in the *Solution Explorer* and click the *Restore Packages* command in order to restore script files. You can also use the `npm install` command in the project folder to restore packages.
 
-Then register an empty "resources" section in your Web.config file to disable the automatic registration:    
+Then, register an empty "resources" section in your Web.config file to disable automatic registration:
 ```xml  
 <configuration>  
   <devExpress>  
@@ -27,11 +27,11 @@ Then register an empty "resources" section in your Web.config file to disable
 </configuration>  
 ```  
  
-Finally register the client-side libraries in the HTML page header section by using `<script\>` tags. **Note** that the order in which scripts are registered is important.  
+In addition, register client-side libraries in the HTML page header section using `<script\>` tags. **Note** that the order in which scripts are registered is important.
 
+##Using bundles
 
-In this example on the [DefaultWithBundles.aspx](./CS/T115434/DefaultWithBundles.aspx) page we have also demonstrated how to use the [BuildBundlerMinifier](https://www.nuget.org/packages/BuildBundlerMinifier) package in order to create script bundles. The bundles configuration is located in the [bundleconfig.json](./CS/T115434/bundleconfig.json) file. Also the [libman.json](./CS/T115434/libman.json) is used to move DevExtreme icons to css folder where the `devextreme.bundle.min.css` bundle is located.
-
+The [DefaultWithBundles.aspx](./CS/T115434/DefaultWithBundles.aspx) page of the example also demonstrates how to use the [BuildBundlerMinifier](https://www.nuget.org/packages/BuildBundlerMinifier) package in order to create script bundles. The configuration of bundles is located in the [bundleconfig.json](./CS/T115434/bundleconfig.json) file. Also, [libman.json](./CS/T115434/libman.json) is used to move DevExtreme icons to the `css` folder where the `devextreme.bundle.min.css` bundle is located.
 
 <!-- default file list -->
 *Files to look at*:

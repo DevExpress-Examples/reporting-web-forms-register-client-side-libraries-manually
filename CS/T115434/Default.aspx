@@ -38,7 +38,7 @@
     <form id="form1" runat="server">
         <div>
             <p>
-                <b>Important Note:</b> Right-click the <i>package.json</i> file in the Solution Explorer and click the "Restore Packages" command in order to restore the script files.
+                <b>Important Note:</b> Right-click the <i>package.json</i> file in the Solution Explorer and click the "Restore Packages" command in order to restore script files.
             </p>
             <dx:ASPxReportDesigner ID="ASPxReportDesigner1" runat="server">
             </dx:ASPxReportDesigner>
