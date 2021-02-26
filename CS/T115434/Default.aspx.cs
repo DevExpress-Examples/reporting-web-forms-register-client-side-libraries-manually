@@ -4,14 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using TestReportDesigner.Reports;
+using DevExpress.XtraReports.UI;
 
-namespace TestReportDesigner {
+namespace T115434 {
     public partial class Default : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
-            if (!IsPostBack) {
-                reportDesigner.OpenReport(new SampleReport());
-            }
+            ASPxReportDesigner1.OpenReport(new XtraReport());
         }
     }
 }
