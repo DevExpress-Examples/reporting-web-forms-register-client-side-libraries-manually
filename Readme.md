@@ -24,7 +24,7 @@ Then, register an empty "resources" section in your `Web.config` file to disable
 </configuration>  
 ```  
  
-Finally register the client-side libraries in the HTML page header section by using `<script\>` tags. **Note** that the order in which scripts are registered is important.  
+In addition, register client-side libraries in the HTML page header section using `<script\>` tags. **Note** that the order in which scripts are registered is important.
 
 
 <!-- default file list -->
