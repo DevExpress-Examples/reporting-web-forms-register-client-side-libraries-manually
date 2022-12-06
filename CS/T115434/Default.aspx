@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="T115434.Default" %>
 
-<%@ Register Assembly="DevExpress.XtraReports.v19.2.Web.WebForms, Version=19.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.XtraReports.v22.2.Web.WebForms, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.XtraReports.Web" TagPrefix="dx" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,9 +8,6 @@
     <title></title>
     
     <script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
-
-    <link href="node_modules/jquery-ui-dist/jquery-ui.min.css" rel="stylesheet" type="text/css" />
-    <script src="node_modules/jquery-ui-dist/jquery-ui.min.js" type="text/javascript"></script>
 
     <script src="node_modules/cldrjs/dist/cldr.js" type="text/javascript"></script>
     <script src="node_modules/cldrjs/dist/cldr/event.js" type="text/javascript"></script>
