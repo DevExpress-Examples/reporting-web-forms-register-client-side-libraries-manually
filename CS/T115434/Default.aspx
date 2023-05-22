@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="T115434.Default" %>
 
-<%@ Register Assembly="DevExpress.XtraReports.v22.2.Web.WebForms, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.XtraReports.v23.1.Web.WebForms, Version=23.1.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.XtraReports.Web" TagPrefix="dx" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -27,9 +27,9 @@
     <script src="node_modules/ace-builds/src-min-noconflict/theme-ambiance.js" type="text/javascript"></script>
     <script src="node_modules/ace-builds/src-min-noconflict/snippets/text.js" type="text/javascript"></script>
 
-    <link href="node_modules/devextreme/dist/css/dx.common.css" rel="stylesheet" type="text/css" />
-    <link href="node_modules/devextreme/dist/css/dx.light.css" rel="stylesheet" type="text/css" />
-    <script src="node_modules/devextreme/dist/js/dx.all.js" type="text/javascript"></script>
+    <link href="node_modules/devextreme-dist/css/dx.common.css" rel="stylesheet" type="text/css" />
+    <link href="node_modules/devextreme-dist/css/dx.light.css" rel="stylesheet" type="text/css" />
+    <script src="node_modules/devextreme-dist/js/dx.all.js" type="text/javascript"></script>
 </head>
 <body>
     <form id="form1" runat="server">

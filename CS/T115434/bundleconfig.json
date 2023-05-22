@@ -2,8 +2,8 @@
   {
     "outputFileName": "Content/css/devextreme.bundle.css",
     "inputFiles": [
-      "node_modules/devextreme/dist/css/dx.common.css",
-      "node_modules/devextreme/dist/css/dx.light.css"
+      "node_modules/devextreme-dist/css/dx.common.css",
+      "node_modules/devextreme-dist/css/dx.light.css"
     ],
     "minify": {
       "enabled": true,
