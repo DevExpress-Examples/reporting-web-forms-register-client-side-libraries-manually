@@ -38,7 +38,7 @@
   {
     "outputFileName": "Content/js/devextreme.bundle.js",
     "inputFiles": [
-      "node_modules/devextreme/dist/js/dx.all.js"
+      "node_modules/devextreme-dist/js/dx.all.js"
     ],
     "minify": {
       "enabled": true
