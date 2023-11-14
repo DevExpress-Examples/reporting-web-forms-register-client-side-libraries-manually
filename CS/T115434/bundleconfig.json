@@ -41,7 +41,7 @@
       "node_modules/devextreme-dist/js/dx.all.js"
     ],
     "minify": {
-      "enabled": true
+      "enabled": false
     },
     "sourceMap": false
   }
