@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DefaultWithBundles.aspx.cs" Inherits="T115434.DefaultWithBundles" %>
+<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="DefaultWithBundles.aspx.vb" Inherits="T115434.DefaultWithBundles" %>
 
 <%@ Register Assembly="DevExpress.XtraReports.v22.2.Web.WebForms, Version=22.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.XtraReports.Web" TagPrefix="dx" %>

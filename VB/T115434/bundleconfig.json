@@ -1,0 +1,48 @@
+[
+  {
+    "outputFileName": "Content/css/devextreme.bundle.css",
+    "inputFiles": [
+      "node_modules/devextreme/dist/css/dx.common.css",
+      "node_modules/devextreme/dist/css/dx.light.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "adjustRelativePaths": false
+    }
+  },
+  {
+    "outputFileName": "Content/js/thirdparty.bundle.js",
+    "inputFiles": [
+      "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/knockout/build/output/knockout-latest.js",
+      "node_modules/cldrjs/dist/cldr.js",
+      "node_modules/cldrjs/dist/cldr/event.js",
+      "node_modules/cldrjs/dist/cldr/supplemental.js",
+      "node_modules/cldrjs/dist/cldr/unresolved.js",
+      "node_modules/globalize/dist/globalize.js",
+      "node_modules/globalize/dist/globalize/message.js",
+      "node_modules/globalize/dist/globalize/number.js",
+      "node_modules/globalize/dist/globalize/currency.js",
+      "node_modules/globalize/dist/globalize/date.js",
+      "node_modules/ace-builds/src-min-noconflict/ace.js",
+      "node_modules/ace-builds/src-min-noconflict/ext-language_tools.js",
+      "node_modules/ace-builds/src-min-noconflict/theme-dreamweaver.js",
+      "node_modules/ace-builds/src-min-noconflict/theme-ambiance.js",
+      "node_modules/ace-builds/src-min-noconflict/snippets/text.js"
+    ],
+    "minify": {
+      "enabled": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "Content/js/devextreme.bundle.js",
+    "inputFiles": [
+      "node_modules/devextreme/dist/js/dx.all.js"
+    ],
+    "minify": {
+      "enabled": true
+    },
+    "sourceMap": false
+  }
+]   
