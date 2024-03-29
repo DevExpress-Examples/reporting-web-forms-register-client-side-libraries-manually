@@ -1,82 +1,84 @@
-﻿Namespace TestReportDesigner.Reports
-	Partial Public Class SampleReport
-		''' <summary>
-		''' Required designer variable.
-		''' </summary>
-		Private components As System.ComponentModel.IContainer = Nothing
+Namespace TestReportDesigner.Reports
 
-		''' <summary> 
-		''' Clean up any resources being used.
-		''' </summary>
-		''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-			If disposing AndAlso (components IsNot Nothing) Then
-				components.Dispose()
-			End If
-			MyBase.Dispose(disposing)
-		End Sub
+    Partial Class SampleReport
 
-		#Region "Designer generated code"
+        ''' <summary>
+        ''' Required designer variable.
+        ''' </summary>
+        Private components As System.ComponentModel.IContainer = Nothing
 
-		''' <summary>
-		''' Required method for Designer support - do not modify
-		''' the contents of this method with the code editor.
-		''' </summary>
-		Private Sub InitializeComponent()
-			Me.lbText = New DevExpress.XtraReports.UI.XRLabel()
-			Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
-			Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
-			Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
-			CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
-			' 
-			' lbText
-			' 
-			Me.lbText.Font = New System.Drawing.Font("Times New Roman", 48F)
-			Me.lbText.LocationFloat = New DevExpress.Utils.PointFloat(10.00001F, 10.00001F)
-			Me.lbText.Name = "lbText"
-			Me.lbText.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
-			Me.lbText.SizeF = New System.Drawing.SizeF(630F, 79.99999F)
-			Me.lbText.StylePriority.UseFont = False
-			Me.lbText.StylePriority.UseTextAlignment = False
-			Me.lbText.Text = "Sample Report"
-			Me.lbText.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
-			' 
-			' TopMargin
-			' 
-			Me.TopMargin.HeightF = 100F
-			Me.TopMargin.Name = "TopMargin"
-			Me.TopMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
-			Me.TopMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
-			' 
-			' Detail
-			' 
-			Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.lbText})
-			Me.Detail.HeightF = 100F
-			Me.Detail.Name = "Detail"
-			Me.Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
-			Me.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
-			' 
-			' BottomMargin
-			' 
-			Me.BottomMargin.HeightF = 100F
-			Me.BottomMargin.Name = "BottomMargin"
-			Me.BottomMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
-			Me.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
-			' 
-			' SampleReport
-			' 
-			Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() { Me.Detail, Me.TopMargin, Me.BottomMargin})
-			Me.Version = "14.1"
-			CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
+        ''' <summary> 
+        ''' Clean up any resources being used.
+        ''' </summary>
+        ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
+            End If
 
-		End Sub
+            MyBase.Dispose(disposing)
+        End Sub
 
-		#End Region
+'#Region "Designer generated code"
+        ''' <summary>
+        ''' Required method for Designer support - do not modify
+        ''' the contents of this method with the code editor.
+        ''' </summary>
+        Private Sub InitializeComponent()
+            Me.lbText = New DevExpress.XtraReports.UI.XRLabel()
+            Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
+            Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
+            Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
+            CType((Me), System.ComponentModel.ISupportInitialize).BeginInit()
+            ' 
+            ' lbText
+            ' 
+            Me.lbText.Font = New System.Drawing.Font("Times New Roman", 48F)
+            Me.lbText.LocationFloat = New DevExpress.Utils.PointFloat(10.00001F, 10.00001F)
+            Me.lbText.Name = "lbText"
+            Me.lbText.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbText.SizeF = New System.Drawing.SizeF(630F, 79.99999F)
+            Me.lbText.StylePriority.UseFont = False
+            Me.lbText.StylePriority.UseTextAlignment = False
+            Me.lbText.Text = "Sample Report"
+            Me.lbText.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
+            ' 
+            ' TopMargin
+            ' 
+            Me.TopMargin.HeightF = 100F
+            Me.TopMargin.Name = "TopMargin"
+            Me.TopMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.TopMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
+            ' 
+            ' Detail
+            ' 
+            Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.lbText})
+            Me.Detail.HeightF = 100F
+            Me.Detail.Name = "Detail"
+            Me.Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
+            ' 
+            ' BottomMargin
+            ' 
+            Me.BottomMargin.HeightF = 100F
+            Me.BottomMargin.Name = "BottomMargin"
+            Me.BottomMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
+            ' 
+            ' SampleReport
+            ' 
+            Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.TopMargin, Me.BottomMargin})
+            Me.Version = "14.1"
+            CType((Me), System.ComponentModel.ISupportInitialize).EndInit()
+        End Sub
 
-		Private lbText As DevExpress.XtraReports.UI.XRLabel
-		Private TopMargin As DevExpress.XtraReports.UI.TopMarginBand
-		Private Detail As DevExpress.XtraReports.UI.DetailBand
-		Private BottomMargin As DevExpress.XtraReports.UI.BottomMarginBand
+'#End Region
+        Private lbText As DevExpress.XtraReports.UI.XRLabel
 
-	End Class
+        Private TopMargin As DevExpress.XtraReports.UI.TopMarginBand
+
+        Private Detail As DevExpress.XtraReports.UI.DetailBand
+
+        Private BottomMargin As DevExpress.XtraReports.UI.BottomMarginBand
+    End Class
 End Namespace
