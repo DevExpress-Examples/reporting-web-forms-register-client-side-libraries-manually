@@ -9,7 +9,7 @@
     <link href="Content/css/devextreme.bundle.min.css" rel="stylesheet" />
 
     <script src="Content/js/thirdparty.bundle.min.js" type="text/javascript"></script>
-    <script src="Content/js/devextreme.bundle.min.js" type="text/javascript"></script>
+    <script src="Content/js/devextreme.bundle.js" type="text/javascript"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -19,7 +19,7 @@
             </p>
 
             <p>
-                The <a href="https://www.nuget.org/packages/BuildBundlerMinifier/">BuildBundlerMinifier﻿</a> NuGet package is used to generate bundles. The configuration of bundles is located in the <i>bundleconfig.json</i> file. Also, <i>libman.json</i> is used to move DevExtreme icons to the css folder where the <i>devextreme.bundle.min.css</i> bundle is located.
+                The <a href="https://www.nuget.org/packages/BuildBundlerMinifier/">BuildBundlerMinifier</a> NuGet package is used to generate bundles. The configuration of bundles is located in the <i>bundleconfig.json</i> file. Also, <i>libman.json</i> is used to move DevExtreme icons to the css folder where the <i>devextreme.bundle.min.css</i> bundle is located.
             </p>
             <dx:ASPxReportDesigner ID="ASPxReportDesigner1" runat="server">
             </dx:ASPxReportDesigner>
