@@ -4,43 +4,65 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# How to register third-party and DevExtreme client-side libraries manually for Web Reporting widgets 
+# Reporting for Web Forms - Manual Client-Side Library Registration
+
+You can register client-side libraries automatically using the following settings in the `Web.config` file `resources` section:
+
+```xml
+<devExpress>
+    <!-- ... -->
+    <resources>
+        <add type="ThirdParty" />
+        <add type="DevExtreme" />
+    </resources>
+</devExpress>
+```
+For more information, review the following help topic: [External Client Libraries](https://docs.devexpress.com/AspNet/17153/common-concepts/webconfig-modifications/webconfig-options/external-client-libraries).
+
+Sometimes you need to have more control over the libraries your application loads. If that is important to you, you'll need to add client libraries manually and in a specific order.
+In this example, all the required third-party and DevExtreme libraries are registered in an ASP.NET Web Forms application manually, one by one. 
+
+To disable automatic registration, leave the `resources` section empty in the `Web.config` file:
+
+```xml
+<devExpress>
+    <!-- ... -->
+    <resources>
+    </resources>
+</devExpress>
+```
+You must then register the client scripts manually.
+
+## Implementation Details
+
+In this example, client libraries and stylesheets are included in the [Default.aspx](./CS/T115434/Default.aspx). 
+
+> [!NOTE]
+> The order in which the libraries are loaded onto the page is important. 
+
+### Third-Party Libraries
+
+#### Required Libraries
+- [jQuery](http://jquery.com/)
+- [Knockout](https://knockoutjs.com/)
+
+#### Optional Libraries
+
+- [Ace.js](http://ace.c9.io/) - used by the [Expression Editor](https://devexpress.github.io/dotnet-eud/reporting-for-web/articles/report-designer/report-designer-tools/expression-editor.html) in the [Web Report Designer]().
+- [DevExpress Rich Text Editor](https://www.npmjs.com/package/devexpress-richedit) - enables you to edit rich text in the [XRRichText](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRRichText) control at design time.
 
 
-This example demonstrates how to include both **Third-Party** and **DevExtreme** libraries in an ASP.NET Web Forms web application **manually**. Our reporting web components require the following libraries:
+### DevExtreme Library
 
-**Third\-Party Libraries:**
-- [jQuery 1.11.3+](http://jquery.com/)
-- [knockout 3.5.0+](https://knockoutjs.com/)
-- [ace.js 1.1.9](http://ace.c9.io/) (required for the [Web Report Designer](https://documentation.devexpress.com/#XtraReports/CustomDocument17103) only, should include ***ext\-language\_tools*** script)  
-- [globalize v1.1.1+](https://github.com/jquery/globalize) (**optional**, should include ***message***, ***number***, ***date***, ***currency*** modules and  ***cldr***, ***cldr.event***, ***cldr.supplemental*** scripts)  
+[DevExtreme](https://www.npmjs.com/package/devextreme/) library is required since Reporting for Web components are based on DevExtreme widgets.
 
+## How to Run the Example
 
-**DevExtreme Libraries:**  
-- [dx.all.js](https://github.com/DevExpress/bower-devextreme/tree/master/js) (should include the **dx.common.css** stylesheet along with the theme stylesheet: **dx.light.css** or **dx.dark.css**)  
+1. This example uses the [npm](https://www.npmjs.com/) package manager to download library files. Right-click the `package.json` file in the *Solution Explorer*, and select *Restore Packages* to load libraries from **npm** source. You can also use the `npm install` command in the project folder to restore packages.
 
+2. Run the project in Visual Studio. You can open the [Default.aspx](http://localhost:23542/Default.aspx) page that includes styles and libraries in the necessary order, or load the [DefaultWithBundles.aspx](http://localhost:23542/DefaultWithBundles.aspx) page that includes scripts bundled with the [BuildBundlerMinifier](https://www.nuget.org/packages/BuildBundlerMinifier). 
 
-Download these libraries and put them into your web application folder. In this example, we used the [npm](https://www.npmjs.com/) package manager for this purpose. Right-click the `package.json` file in the *Solution Explorer* and click the *Restore Packages* command in order to restore script files. You can also use the `npm install` command in the project folder to restore packages.
-
-Then, register an empty "resources" section in your Web.config file to disable automatic registration:
-```xml  
-<configuration>  
-  <devExpress>  
-    ...  
-    <resources>  
-    </resources>  
-  </devExpress>  
-</configuration>  
-```  
- 
-In addition, register client-side libraries in the HTML page header section using `<script\>` tags. **Note** that the order in which scripts are registered is important.
-
-## Using bundles
-
-The [DefaultWithBundles.aspx](./CS/T115434/DefaultWithBundles.aspx) page of the example also demonstrates how to use the [BuildBundlerMinifier](https://www.nuget.org/packages/BuildBundlerMinifier) package in order to create script bundles. The configuration of bundles is located in the [bundleconfig.json](./CS/T115434/bundleconfig.json) file. Also, [libman.json](./CS/T115434/libman.json) is used to move DevExtreme icons to the `css` folder where the `devextreme.bundle.min.css` bundle is located.
-
-<!-- default file list -->
-*Files to look at*:
+## Files to Review
 
 * [package.json](./CS/T115434/package.json)
 * [libman.json](./CS/T115434/libman.json)
@@ -50,8 +72,16 @@ The [DefaultWithBundles.aspx](./CS/T115434/DefaultWithBundles.aspx) page of the 
 * [DefaultWithBundles.aspx](./CS/T115434/DefaultWithBundles.aspx)
 * [DefaultWithBundles.aspx.cs](./CS/T115434/DefaultWithBundles.aspx.cs)
 * [Web.config](./CS/T115434/Web.config)
-<!-- default file list end -->
-<!-- feedback -->
+
+
+## Documentation
+
+- [External Client Libraries](https://docs.devexpress.com/AspNet/17153/common-concepts/webconfig-modifications/webconfig-options/external-client-libraries)
+- [Reporting Application Diagnostics](https://docs.devexpress.com/XtraReports/401687/web-reporting/troubleshooting/application-diagnostics)
+- [ASP.NET Web Forms Reporting](https://docs.devexpress.com/XtraReports/400245/web-reporting/asp-net-webforms-reporting)
+
+
+
 ## Does this example address your development requirements/objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-web-forms-register-client-side-libraries-manually&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-web-forms-register-client-side-libraries-manually&~~~was_helpful=no)
