@@ -5,8 +5,8 @@
   "dependencies": {
     "jquery": "^3.5.1",
     "knockout": "^3.5.1",
-    "devexpress-richedit": "24.1-next",
-    "devextreme-dist": "24.1-next",
+    "devexpress-richedit": "24.1.4",
+    "devextreme-dist": "24.1.4",
     "ace-builds": "^1.4.12"
   }
 }
