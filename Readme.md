@@ -80,8 +80,7 @@ In this example, client libraries and stylesheets are included in the [Default.a
 - [Reporting Application Diagnostics](https://docs.devexpress.com/XtraReports/401687/web-reporting/troubleshooting/application-diagnostics)
 - [ASP.NET Web Forms Reporting](https://docs.devexpress.com/XtraReports/400245/web-reporting/asp-net-webforms-reporting)
 
-
-
+<!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-web-forms-register-client-side-libraries-manually&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-web-forms-register-client-side-libraries-manually&~~~was_helpful=no)
