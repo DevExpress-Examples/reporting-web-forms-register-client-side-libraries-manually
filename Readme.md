@@ -60,17 +60,14 @@ In this example, client libraries and stylesheets are included in the [Default.a
 
 1. This example uses the [npm](https://www.npmjs.com/) package manager to download library files. Right-click the `package.json` file in the *Solution Explorer*, and select *Restore Packages* to load libraries from **npm** source. You can also use the `npm install` command in the project folder to restore packages.
 
-2. Run the project in Visual Studio. You can open the [Default.aspx](http://localhost:23542/Default.aspx) page that includes styles and libraries in the necessary order, or load the [DefaultWithBundles.aspx](http://localhost:23542/DefaultWithBundles.aspx) page that includes scripts bundled with the [BuildBundlerMinifier](https://www.nuget.org/packages/BuildBundlerMinifier). 
+2. Run the project in Visual Studio. Open the [Default.aspx](http://localhost:23542/Default.aspx) page that includes styles and libraries in the necessary order.
 
 ## Files to Review
 
 * [package.json](./CS/T115434/package.json)
 * [libman.json](./CS/T115434/libman.json)
-* [bundleconfig.json](./CS/T115434/bundleconfig.json)
 * [Default.aspx](./CS/T115434/Default.aspx)
 * [Default.aspx.cs](./CS/T115434/Default.aspx.cs)
-* [DefaultWithBundles.aspx](./CS/T115434/DefaultWithBundles.aspx)
-* [DefaultWithBundles.aspx.cs](./CS/T115434/DefaultWithBundles.aspx.cs)
 * [Web.config](./CS/T115434/Web.config)
 
 
